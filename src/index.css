@@ -1,13 +1,472 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* **************************************************************** Start Main Rules **************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+  --main-text: #818181;
+  --main-font: 'Libre Franklin', sans-serif;
+  --main-color: #e32879;
+  --second-color: #fff;
+  --main-bg: #272b30;
+  --header-wgight: 700;
+  --section-bg: #f3f3f3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: var(--main-font);
+}
+
+.register,.login {
+  background-image: url('./Assets/count.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.btn:disabled{
+  color: #fff;
+  pointer-events: none;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  opacity: 0.65;
+}
+/* **************************************************************** Start loading **************************************************************/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--second-color);
+  z-index: 59864875;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid var(--main-color);
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid var(--main-color);
+  border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* **************************************************************** Start Navbar **************************************************************/
+nav {
+  background-color: var(--main-bg);
+  z-index: 1000;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--second-color);
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.navbar-toggler {
+  border: 2px solid var(--main-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.cart {
+  font-size: 10px !important;
+  top: 3px;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  padding: 6px;
+}
+
+.cartsidbar {
+  font-size: 14px;
+}
+
+.cusror {
+  cursor: pointer;
+}
+
+/* **************************************************************** Start Home **************************************************************/
+.main{
+  background-image: url(./Assets/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.main .container{
+  display: flex;
+  align-items: center;
+}
+span{
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase
+}
+.main h1{
+  color: var(--second-color);
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.main p{
+  font-size: 16px;
+  color: var(--second-color);
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 45px;
+}
+.main a{
+  font-size: 16px;
+  color: var(--second-color);
+  background: var(--main-color);
+  font-weight: 700;
+  padding: 12px 30px 10px;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  transition: all 0.5s;
+}
+.main a:hover{
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+}
+h2{
+  font-size: 45px;
+  color: var(--main-bg);
+  font-weight: 700;
+  margin-top: 14px;
+  line-height: 1.2;
+}
+.about p{
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 45px;
+}
+.about a{
+  font-size: 16px;
+  color: var(--second-color);
+  background: var(--main-color);
+  font-weight: 700;
+  padding: 12px 30px 10px;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  transition: all 0.5s;
+}
+.about a:hover{
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+/* **************************************************************************************** Start Service ***************************************************************/
+.Service , .customer{
+  background-color: var(--section-bg);
+}
+.Service .items{
+  background-color: var(--second-color);
+}
+.Service h3{
+  font-size: 22px;
+  color: var(--main-bg);
+  font-weight: 700;
+}
+.Service p{
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px;
+}
+.Service .items{
+  border-bottom: 5px solid var(--main-color);
+}
+/* **************************************************************************************** Start catagory ***************************************************************/
+.owl-theme .owl-dots .owl-dot.active span{
+   background-color: var(--main-color);
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
+}
+/* **************************************************************************************** Start customer ***************************************************************/
+.customer .head h5 {
+  font-size: 22px;
+  color: var(--main-bg);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.customer .head span {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--main-color);
+}
+.customer .head .rating {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.customer p {
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+}
+.customer .test-info{
+  border: 2px solid var(--main-color);
+}
+/* **************************************************************************************** Start count ***************************************************************/
+.count{
+  background-image: url(./Assets/count.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.count .row>*{
+  margin: 0;
+}
+.counter span{
+font-size: 25px;
+font-weight: 700;
+line-height: 1.6;
+color: var(--second-color);
+}
+.counter p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--second-color);
+  margin: 0;
+}
+/* **************************************************************************************** Start blog ***************************************************************/
+.blog .blog-bg{
+  background-image: url(./Assets/blog-1.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 350px;
+}
+.blog .blog-bg2{
+  background-image: url(./Assets/blog-2.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 350px;
+}
+.blog .blog-bg3{
+  background-image: url(./Assets/blog-3.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 350px;
+}
+.blog .blog-bg4{
+  background-image: url(./Assets/blog-4.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 350px;
+}
+.blog i{
+  color: var(--main-color);
+}
+.blog span{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.blog h4{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--main-bg);
+}
+.blog p{
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px
+}
+.blog h5{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-bg);
+}
+.blog .user span{
+  font-size: 12px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* **************************************************************************************** Start FOOTER ***************************************************************/
+.footer {
+  background-color: var(--main-bg);
+}
+.footer .categories {
+  display: flex;
+  flex-direction: column;
+}
+.footer .categories a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: var(--main-text);
+  transition: all 0.5s;
+}
+.footer p{
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px
+}
+.footer .categories a:hover {
+  color: var(--main-color);
+}
+.social i {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+  transition: all 0.5s;
+}
+.social i:hover{
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+}
+.footer input {
+  background-color: transparent;
+  color: var(--second-color) !important;
+}
+.footer input::placeholder {
+  color: var(--main-text);
+  opacity: 1;
+}
+.form-control:focus {
+  border-color: var(--main-color);
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--main-bg);
+}
+.footer .form-control:focus {
+  border-color: var(--main-color);
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--second-color);
+}
+/* **************************************************************************************** Start All  ***************************************************************/
+.header-page{
+  background-image: url('./Assets/count.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.header-page h2 , .header-page span{
+  color: var(--second-color);
+}
+/* **************************************************************************************** Start detailes  ***************************************************************/
+.close {
+  font-size: 30px;
+  position: relative;
+  z-index: 1000;
+}
+.close i {
+  position: absolute;
+  right: 4%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.close i:hover {
+  color: #f00c0c;
+}
+.btn-bg2 {
+  background-color: var(--main-color);
+  color: var(--second-color) !important;
+  transition: all 0.5s;
+  border: 1px solid var(--main-color);
+}
+.btn-bg2:hover {
+  background-color: transparent;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color);
+}
+.information p{
+  font-size: 16px;
+  color: var(--main-text);
+  font-weight: 400;
+  line-height: 26px;
+}
+/* ************************************************************* start contact ***********************************************/
+.contact iframe{
+  width: 100%;
+  height: 500px;
+}
+.contact form input,
+.contact form textarea {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'mohamed-m';
+}
+
+.contact .form-control:focus {
+  color: var(--main-bg);
+  background-color: #f4f4f4;
+  outline: 0;
+  box-shadow: 0 0 0 0.10rem var(--main-color) !important;
+}
+
+.contact .icon i {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  color: var(--main-color);
+}
+
+/* ***************************************** media screen ********************************* */
+@media screen and (max-width: 767px) {
+h2{
+  font-size: 30px;
+}
 }
