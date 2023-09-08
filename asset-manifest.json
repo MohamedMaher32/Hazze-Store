@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Hazze-Store/static/css/main.49a259cd.css",
+    "main.js": "/Hazze-Store/static/js/main.03e808a3.js",
+    "static/js/787.fb6a6df6.chunk.js": "/Hazze-Store/static/js/787.fb6a6df6.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Hazze-Store/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/Hazze-Store/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/hero-bg.jpg": "/Hazze-Store/static/media/hero-bg.8c80ff9c756aedfd8828.jpg",
+    "static/media/fa-solid-900.woff2": "/Hazze-Store/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/blog-4.jpg": "/Hazze-Store/static/media/blog-4.83e9cb9d69583de1d3f9.jpg",
+    "static/media/blog-2.jpg": "/Hazze-Store/static/media/blog-2.254f79a987df4121229c.jpg",
+    "static/media/fa-brands-400.woff2": "/Hazze-Store/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/error.svg": "/Hazze-Store/static/media/error.234d12e099ff00febf297f831b25240a.svg",
+    "static/media/about-us.jpg": "/Hazze-Store/static/media/about-us.11cb8e900f836e20ea6d.jpg",
+    "static/media/emptycart.png": "/Hazze-Store/static/media/emptycart.4d8f559caff497ed7996.png",
+    "static/media/blog-3.jpg": "/Hazze-Store/static/media/blog-3.10c9ac6ff5cb875733ea.jpg",
+    "static/media/blog-1.jpg": "/Hazze-Store/static/media/blog-1.5bd6fcb7f201e926aba9.jpg",
+    "static/media/fa-regular-400.ttf": "/Hazze-Store/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/count.jpg": "/Hazze-Store/static/media/count.c3658f75a326290f21ba.jpg",
+    "static/media/fa-regular-400.woff2": "/Hazze-Store/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Hazze-Store/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Hazze-Store/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/Hazze-Store/index.html",
+    "main.49a259cd.css.map": "/Hazze-Store/static/css/main.49a259cd.css.map",
+    "main.03e808a3.js.map": "/Hazze-Store/static/js/main.03e808a3.js.map",
+    "787.fb6a6df6.chunk.js.map": "/Hazze-Store/static/js/787.fb6a6df6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49a259cd.css",
+    "static/js/main.03e808a3.js"
+  ]
+}
